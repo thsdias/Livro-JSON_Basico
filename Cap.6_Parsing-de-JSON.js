@@ -53,7 +53,6 @@ console.log(author.pets.length);    // 2
 console.log(author.pets[0].name);   // Waverly 
 
 
-
 /* 
 --------------------------------------------------------------------------------
 * eval:
@@ -99,7 +98,6 @@ console.log(foo);   // abc
 
 // Obs: Como valores JavaScript podem ser facilmente sobrescritos, é mandatorio
 //      que somente texto JSON valido seja fornecido a eval.
-
 
 
 /* 
