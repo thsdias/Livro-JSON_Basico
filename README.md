@@ -23,3 +23,5 @@ Conheça o formato de dados preferido da web
 ■ **Capítulo 6 - Parsing de JSON**
 
 ■ **Capítulo 7 - Persistencia de JSON [Cookie / Web Storage]**
+
+■ **Capítulo 8 - Troca de dados**
