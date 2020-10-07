@@ -29,3 +29,5 @@ Conheça o formato de dados preferido da web
 ■ **Capítulo 9 - Recursos cross-origin**
 
 ■ **Capítulo 10 - Servindo JSON**
+
+■ **Capítulo 11 - Postando JSON**
