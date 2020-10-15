@@ -33,3 +33,5 @@ Conheça o formato de dados preferido da web
 ■ **Capítulo 11 - Postando JSON**
 
 ■ **Capítulo 12 - Persistencia JSON: II**
+
+■ **Capítulo 13 - Trabalhando com Templates**

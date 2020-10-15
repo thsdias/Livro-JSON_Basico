@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="handlebars-v4.7.6.js"></script>
+    <style>
+        .employee {
+            border: 1px solid;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <section id="directory">
+        <script type="application/x-handlebars" id=Handlebar-Employee-Template>
+            {{#employees}}
+            <div class="employee">
+                <p>firstName: {{fName}}</p>
+                <p>lastName: {{lName}}</p>
+                {{#contact}}
+                    <p>phone: {{phone}}</p>
+                    <p>cell: {{cell}}</p>
+                    <p>email: {{email}}</p>
+                {{/contact}}
+            </div>
+            {{/employees}}            
+        </script>
+    </section>
+    <script type="application/javascript">
+        var templateWrapper = document.getElementById('Handlebar-Employee-Template');
+        var templateContent = templateWrapper.innerHTML;
+        var templateFunction = Handlebars.compile(templateContent);
+        var complexJSON = {
+                            'employees': [
+                                {
+                                    'fName': 'Ben',
+                                    'lName': 'Smith',
+                                    'contact': {
+                                        'phone': '555-1234',
+                                        'cell': '555-5678',
+                                        'email': 'ben@example.com'
+                                    }
+                                },
+                                {
+                                    'fName': 'Ivan',
+                                    'lName': 'Bravo',
+                                    'contact': {
+                                        'phone': '555-9012',
+                                        'cell': '555-9034',
+                                        'email': 'ivan@example.com'
+                                    }
+                                },
+                                {
+                                    'fName': 'Michael',
+                                    'lName': 'Chang',
+                                    'contact': {
+                                        'phone': '555-1234'
+                                    }
+                                }
+                            ]
+                        }
+        var directory = document.getElementById('directory');
+            directory.innerHTML = templateFunction(complexJSON);
+    </script>
+</body>
+</html>
