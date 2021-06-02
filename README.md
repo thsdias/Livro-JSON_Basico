@@ -7,6 +7,8 @@ Conheça o formato de dados preferido da web
 - Link: https://novatec.com.br/livros/json-basico/
 
 
+![Screenshot](https://images-na.ssl-images-amazon.com/images/I/41xBIAJv0UL._SX357_BO1,204,203,200_.jpg)
+
 ## Sumário
 
 
